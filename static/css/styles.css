@@ -1,0 +1,280 @@
+/*Main page styles*/
+
+.article{
+    display: none;
+    margin-right: 50px;
+}
+
+#title-main{
+    font-size: 20px;
+}
+
+footer{
+    font-size: 14px;
+
+}
+
+#modal-window {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.create{
+    background: green;
+}
+
+ .create:disabled{
+     background: red;
+}
+.save-edit:disabled{
+    background: red;
+}
+
+
+a{
+    margin: 10px;
+}
+
+#show-edit{
+    font-family: "Bell MT", serif;
+    color: blue;
+
+}
+#delete-button{
+    font-family: "Bell MT", serif;
+    color: orangered;
+}
+
+
+.article-name{
+    width:60%;
+    text-align: start;
+}
+td{
+    width:18%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size:10px;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.table-container{
+    min-height: 500px;
+    margin:20px;
+}
+
+
+th,
+td {
+    padding: 10px;
+
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button.create {
+    background-color: #007BFF;
+}
+
+button.create:hover {
+    background-color: #0069D9;
+}
+
+button.cancel {
+    background-color: #DC3545;
+}
+
+button.cancel:hover {
+    background-color: #C92A36;
+}
+
+/*Edit/Create window styles*/
+
+#modal-window label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#modal-window input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.main-container{
+
+    text-align: center;
+}
+.article-table{
+    margin-left: auto;
+    margin-right: auto;
+    width:100vw;
+}
+.prev, .next, .number-articles, .open-modal{
+    display: inline-block;
+    margin: 10px;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    padding: 25px;
+    bottom: 10px;
+}
+form {
+    width: 500px;
+    margin: 5px auto;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back-edit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+/*View window styles*/
+
+#show-title {
+
+    font-size: 40px;
+    color: #446688;
+    margin: 20px 20px 20px;
+    text-align: center;
+}
+
+#show-article-content{
+    font-family: Arial, sans-serif;
+    line-height: 3;
+    max-width: 70%;
+    word-wrap: break-word;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+
+}
+
+#edit-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 850px;
+    margin-right: 10px;
+    font-size: 1rem;
+
+}
+#back-button{
+    background-color: #C92A36;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    z-index: 200;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+#back-button-show{
+    background-color: #C92A36;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+#show-title-search{
+    font-size: 40px;
+    color: #446688;
+    text-align: center;
+}
