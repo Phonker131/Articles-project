@@ -4,7 +4,7 @@
 require_once './models/Article.php';
 
 
-class ArticleModel//
+class ArticleModel
 {
 //Business logic of refactoring data
     private $mysqli;
