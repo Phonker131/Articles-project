@@ -11,15 +11,15 @@ An educational article management application built with PHP and MySQL. It uses 
 ## Stack
 PHP, MySQL/MariaDB, MySQLi, HTML, CSS, JavaScript.
 
-## Local setup
-1. Clone this repository into a local PHP web server directory, for example XAMPP's `htdocs/Articles`.
-2. Enable PHP's `mysqli` extension and start MySQL/MariaDB.
-3. Create a local database and import [articles.sql](articles.sql).
-4. Set your local connection values in `config/db_config.php`.
-5. Check `config/project_config.php`: the current base path is `/Articles`.
-6. Configure the web server to route application requests through `index.php`, then open `http://localhost/Articles/articles`.
+## Local development prerequisites
+- PHP with the `mysqli` extension and MySQL/MariaDB.
+- A local database initialized from [articles.sql](articles.sql).
+- Local database settings in `config/db_config.php`.
 
-The repository does not include a complete web-server rewrite configuration. Routing setup depends on the chosen server.
+## Current setup limitations
+This is an earlier university project. Before running it, align the application paths: `config/project_config.php` currently uses `/Articles`, browser requests in `static/js/javascript.js` use a university-server path, and `dispatcher.php` uses fixed URL-segment positions. The repository also does not contain an Apache rewrite configuration.
+
+A one-command setup is not available yet. These routing settings need to be made consistent for the chosen local server before the CRUD flow can be evaluated.
 
 ## Project structure
 | Path | Purpose |
